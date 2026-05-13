@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WealthLens Privacy Policy - Learn how we protect your financial data and privacy.">
+    <title>Privacy Policy — WealthLens</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-light: #eff6ff;
+            --text: #1e293b;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --bg: #ffffff;
+            --bg-card: #f8fafc;
+            --border: #e2e8f0;
+            --warning-bg: #fffbeb;
+            --warning-text: #b45309;
+            --radius: 12px;
+            --max-width: 800px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #60a5fa;
+                --primary-light: #1e293b;
+                --text: #f1f5f9;
+                --text-secondary: #cbd5e1;
+                --text-muted: #64748b;
+                --bg: #0f172a;
+                --bg-card: #1e293b;
+                --border: #334155;
+                --warning-bg: #422006;
+                --warning-text: #fbbf24;
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 48px 24px 64px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 36px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary-light);
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin: 20px 0 10px;
+            color: var(--text);
+        }
+
+        p, li {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            padding: 8px 0 8px 24px;
+            position: relative;
+            border-bottom: 1px solid var(--border);
+        }
+
+        ul li::before {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 16px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--primary);
+        }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin: 16px 0;
+        }
+
+        .section-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: var(--primary-light);
+            margin-right: 12px;
+            font-size: 20px;
+            vertical-align: middle;
+        }
+
+        .warning-banner {
+            background: var(--warning-bg);
+            border: 1px solid var(--warning-text);
+            border-left: 4px solid var(--warning-text);
+            border-radius: var(--radius);
+            padding: 16px 20px;
+            margin: 32px 0 16px;
+            font-size: 13px;
+            color: var(--warning-text);
+        }
+
+        .contact-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-top: 16px;
+        }
+
+        .contact-box a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+        }
+
+        .toc ol {
+            padding-left: 20px;
+        }
+
+        .toc ol li {
+            border-bottom: none;
+            padding: 4px 0;
+            font-size: 14px;
+        }
+
+        .toc ol li::before {
+            display: none;
+        }
+
+        .toc ol li a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .toc ol li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-top: 1px solid var(--border);
+            margin-top: 48px;
+        }
+
+        footer p {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">WealthLens</div>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: May 13, 2026</p>
+        </header>
+
+        <section>
+            <p>
+                WealthLens ("we," "our," or "us") is committed to protecting your privacy.
+                This Privacy Policy explains how we collect, use, disclose, and safeguard
+                your information when you use our mobile application (the "App").
+                Please read this policy carefully.
+            </p>
+            <p>
+                <strong>By using WealthLens, you agree to the data practices described in this policy.</strong>
+            </p>
+        </section>
+
+        <nav class="toc">
+            <h3>Table of Contents</h3>
+            <ol>
+                <li><a href="#info-we-collect">Information We Collect</a></li>
+                <li><a href="#how-we-use">How We Use Your Information</a></li>
+                <li><a href="#data-storage">Data Storage and Security</a></li>
+                <li><a href="#third-party">Third-Party Services & Disclosures</a></li>
+                <li><a href="#your-rights">Your Data Rights & Choices</a></li>
+                <li><a href="#children">Children's Privacy</a></li>
+                <li><a href="#international">International Data Transfers</a></li>
+                <li><a href="#changes">Changes to This Policy</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ol>
+        </nav>
+
+        <!--  1. Information We Collect -->
+        <h2 id="info-we-collect"><span class="section-icon">📋</span>1. Information We Collect</h2>
+
+        <h3>1.1 Financial Data You Provide</h3>
+        <ul>
+            <li><strong>Investment Holdings:</strong> Asset names, quantities, purchase prices, dates, and categories (stocks, mutual funds, crypto, fixed deposits, etc.) that you manually enter or import.</li>
+            <li><strong>Transaction Records:</strong> Buy/sell transactions, dividend payments, interest credits, and systematic investment plan details.</li>
+            <li><strong>Document Uploads:</strong> When you use the AI Document Parser, we process images (photos/scans) or text extracted from your financial statements to extract investment details.</li>
+        </ul>
+
+        <h3>1.2 Automatically Collected Information</h3>
+        <ul>
+            <li><strong>Usage Data:</strong> Anonymized, aggregated information about how you interact with the App (e.g., features used, screen views, session duration). This data is stored <em>locally only</em> and is not transmitted to external analytics servers.</li>
+            <li><strong>Device Information:</strong> Device model, operating system version, and app version for debugging and compatibility purposes.</li>
+        </ul>
+
+        <h3>1.3 Information We DO NOT Collect</h3>
+        <ul>
+            <li><strong>Personal Identifiers:</strong> We do not require or collect your name, email address, phone number, or physical address.</li>
+            <li><strong>Bank Credentials:</strong> WealthLens does not connect to your bank or brokerage accounts. We never see or store your banking usernames or passwords.</li>
+            <li><strong>Location Data:</strong> We do not collect precise geolocation data.</li>
+            <li><strong>Biometric Data:</strong> If you enable biometric lock (fingerprint/face), the authentication is handled entirely by your device's operating system. We never receive or store your biometric data.</li>
+        </ul>
+
+        <!--  2. How We Use Your Information -->
+        <h2 id="how-we-use"><span class="section-icon">⚙️</span>2. How We Use Your Information</h2>
+
+        <ul>
+            <li><strong>Core Functionality:</strong> To calculate portfolio value, asset allocation, performance metrics (XIRR, CAGR), and generate financial summaries on your device.</li>
+            <li><strong>AI-Powered Insights:</strong> To provide intelligent portfolio analysis and document parsing using Large Language Models (LLMs). When you use these features, only relevant, anonymized portfolio summaries or document text are sent to the LLM provider.</li>
+            <li><strong>Market Data:</strong> To fetch current asset prices from public providers (e.g., Yahoo Finance). Only asset symbols are shared to retrieve valuations.</li>
+            <li><strong>Notifications:</strong> To send local push notifications for price alerts, maturity reminders, premium due dates, and other events you configure.</li>
+            <li><strong>Security:</strong> To encrypt your data, authenticate your identity via biometric lock, and protect against unauthorized access.</li>
+            <li><strong>Improvement:</strong> To identify bugs, crashes, and performance issues so we can improve the App.</li>
+        </ul>
+
+        <!--  3. Data Storage and Security -->
+        <h2 id="data-storage"><span class="section-icon">🔒</span>3. Data Storage and Security</h2>
+
+        <div class="card">
+            <h3>Local-First Architecture</h3>
+            <p>
+                WealthLens is designed as a <strong>local-first</strong> application. All your sensitive financial
+                data — holdings, transactions, and account details — is stored exclusively on your device.
+                We do <strong>not</strong> maintain remote databases or cloud backups of your personal portfolio data.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Encryption</h3>
+            <ul>
+                <li><strong>At Rest:</strong> Your local database is encrypted using AES-256 via SQLCipher. All data written to disk is fully encrypted.</li>
+                <li><strong>Key Management:</strong> The 256-bit encryption key is unique to your device and stored in your system's hardware-backed Secure Enclave (iOS Keychain / Android Keystore).</li>
+                <li><strong>Backups:</strong> Exported backup files are AES-256 encrypted. You control the encryption password.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Data Retention</h3>
+            <p>
+                Your data remains on your device until you choose to delete it. You can wipe all data
+                at any time using the "Delete All Data" option in the App's Settings. This permanently
+                deletes the database and associated encryption keys from your device.
+            </p>
+        </div>
+
+        <!--  4. Third-Party Services -->
+        <h2 id="third-party"><span class="section-icon">🔗</span>4. Third-Party Services & Disclosures</h2>
+
+        <h3>4.1 LLM Providers (AI Features)</h3>
+        <p>
+            When you use AI-powered features (Insights, Document Parsing), data is sent to third-party
+            LLM providers. The following providers are supported:
+        </p>
+        <ul>
+            <li><strong>OpenAI</strong> (GPT models) — <a href="https://openai.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
+            <li><strong>Anthropic</strong> (Claude models) — <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
+            <li><strong>Google</strong> (Gemini models) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
+        </ul>
+        <p>
+            You choose which provider to use and provide your own API key. Data sent to these providers is
+            subject to their respective privacy policies and data usage terms. We recommend reviewing each
+            provider's policy. Only anonymized portfolio summaries or document text you explicitly submit
+            are transmitted.
+        </p>
+
+        <h3>4.2 Market Data Providers</h3>
+        <ul>
+            <li><strong>Yahoo Finance:</strong> Asset symbols are sent to retrieve current market prices.</li>
+            <li><strong>CoinGecko:</strong> Cryptocurrency symbols are sent to retrieve current crypto prices.</li>
+            <li><strong>Frankfurter API:</strong> Currency codes are sent to retrieve foreign exchange rates.</li>
+        </ul>
+
+        <h3>4.3 Legal Disclosure</h3>
+        <p>
+            We do not sell, trade, or rent your personal data. We may disclose information only if required
+            to do so by law or in response to valid legal requests by public authorities (e.g., a court or
+            government agency). Since your data is stored locally, we have limited ability to produce it.
+        </p>
+
+        <!--  5. Your Rights -->
+        <h2 id="your-rights"><span class="section-icon">⚖️</span>5. Your Data Rights & Choices</h2>
+
+        <p>Depending on your jurisdiction, you may have the following rights:</p>
+
+        <div class="card">
+            <ul>
+                <li><strong>Access & Portability:</strong> View all your data within the App and export encrypted backups in JSON format for your own records.</li>
+                <li><strong>Deletion (Right to Erasure):</strong> Permanently delete all data from your device using the "Delete All Data" option in Settings. This action is irreversible.</li>
+                <li><strong>Opt-Out of AI Features:</strong> Disable AI-powered insights and document parsing at any time in Settings.</li>
+                <li><strong>Opt-Out of Notifications:</strong> Manage notification preferences individually in Settings.</li>
+                <li><strong>Biometric Lock:</strong> Enable or disable biometric authentication in Settings.</li>
+                <li><strong>Privacy Mode:</strong> Enable Privacy Mode to mask sensitive financial amounts on screen.</li>
+            </ul>
+        </div>
+
+        <p>
+            To exercise any of these rights, use the options within the App's Settings screen.
+            Since all data is stored locally on your device, you have full and immediate control.
+        </p>
+
+        <!--  6. Children's Privacy -->
+        <h2 id="children"><span class="section-icon">👶</span>6. Children's Privacy</h2>
+        <p>
+            WealthLens is not intended for use by children under the age of 13. We do not knowingly
+            collect personal information from children under 13. If you are a parent or guardian and
+            believe your child has provided us with information, please contact us. Since all data is
+            stored locally on the device, you can delete it directly through the App's Settings.
+        </p>
+
+        <!--  7. International Data Transfers -->
+        <h2 id="international"><span class="section-icon">🌍</span>7. International Data Transfers</h2>
+        <p>
+            Your financial data is stored locally on your device. When you use AI features,
+            anonymized data may be transmitted to LLM providers whose servers may be located
+            in different countries. By using these features, you consent to such transfers.
+            The LLM providers listed above participate in applicable data protection frameworks.
+        </p>
+
+        <!--  8. Changes -->
+        <h2 id="changes"><span class="section-icon">📝</span>8. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time. We will notify you of any changes
+            by posting the new Privacy Policy within the App and updating the "Last Updated" date.
+            You are advised to review this Privacy Policy periodically for any changes.
+            Continued use of the App after changes constitutes acceptance of the updated policy.
+        </p>
+
+        <!--  9. Contact -->
+        <h2 id="contact"><span class="section-icon">📧</span>9. Contact Us</h2>
+
+        <div class="contact-box">
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+            <p>
+                📧 Email: <a href="mailto:privacy@wealthlens.app">privacy@wealthlens.app</a>
+            </p>
+            <p>
+                🌐 Website: <a href="https://wealthlens.app" target="_blank" rel="noopener">https://wealthlens.app</a>
+            </p>
+            <p style="margin-top: 12px; font-size: 13px; color: var(--text-muted);">
+                We aim to respond to all inquiries within 5 business days.
+            </p>
+        </div>
+
+        <div class="warning-banner">
+            ⚠️ <strong>Disclaimer:</strong> This privacy policy template is provided for informational purposes.
+            It may not address all legal requirements for your specific jurisdiction. For complete compliance,
+            consult with a qualified privacy law specialist, particularly regarding GDPR (EU), CCPA (California),
+            LGPD (Brazil), PDPA (Singapore), PDPB (India), and other applicable regulations.
+        </div>
+
+        <footer>
+            <p>&copy; 2026 WealthLens. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="https://wealthlens.app">Home</a> &middot;
+                <a href="https://wealthlens.app/privacy">Privacy Policy</a> &middot;
+                <a href="https://wealthlens.app/terms">Terms of Service</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
